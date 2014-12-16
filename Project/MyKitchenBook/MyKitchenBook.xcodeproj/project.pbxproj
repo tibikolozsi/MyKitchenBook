@@ -13,7 +13,6 @@
 		67CB915B1A40CE710041DB26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB915A1A40CE710041DB26 /* ViewController.m */; };
 		67CB915E1A40CE710041DB26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CB915C1A40CE710041DB26 /* Main.storyboard */; };
 		67CB91601A40CE710041DB26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CB915F1A40CE710041DB26 /* Images.xcassets */; };
-		67CB91631A40CE710041DB26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67CB91611A40CE710041DB26 /* LaunchScreen.xib */; };
 		67CB916F1A40CE710041DB26 /* MyKitchenBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB916E1A40CE710041DB26 /* MyKitchenBookTests.m */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +37,6 @@
 		67CB915A1A40CE710041DB26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		67CB915D1A40CE710041DB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67CB915F1A40CE710041DB26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		67CB91621A40CE710041DB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		67CB91681A40CE710041DB26 /* MyKitchenBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyKitchenBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CB916D1A40CE710041DB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67CB916E1A40CE710041DB26 /* MyKitchenBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyKitchenBookTests.m; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				67CB915A1A40CE710041DB26 /* ViewController.m */,
 				67CB915C1A40CE710041DB26 /* Main.storyboard */,
 				67CB915F1A40CE710041DB26 /* Images.xcassets */,
-				67CB91611A40CE710041DB26 /* LaunchScreen.xib */,
 				67CB91561A40CE710041DB26 /* MyKitchenBook.xcdatamodeld */,
 				67CB914F1A40CE700041DB26 /* Supporting Files */,
 			);
@@ -203,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CB915E1A40CE710041DB26 /* Main.storyboard in Resources */,
-				67CB91631A40CE710041DB26 /* LaunchScreen.xib in Resources */,
 				67CB91601A40CE710041DB26 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +250,6 @@
 				67CB915D1A40CE710041DB26 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		67CB91611A40CE710041DB26 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67CB91621A40CE710041DB26 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +335,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyKitchenBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyKitchenBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +408,7 @@
 				67CB91741A40CE710041DB26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67CB91751A40CE710041DB26 /* Build configuration list for PBXNativeTarget "MyKitchenBookTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +417,7 @@
 				67CB91771A40CE710041DB26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
