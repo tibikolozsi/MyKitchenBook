@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6783C17A1A49B74E008AE2F2 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */; };
+		6783C17D1A49B916008AE2F2 /* RecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C17C1A49B916008AE2F2 /* RecipesViewController.m */; };
+		6783C1801A49B929008AE2F2 /* ShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C17F1A49B929008AE2F2 /* ShoppingListViewController.m */; };
+		6783C1831A49B939008AE2F2 /* IngredientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1821A49B939008AE2F2 /* IngredientsViewController.m */; };
+		6783C18D1A49C654008AE2F2 /* CBStoreHouseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C18C1A49C654008AE2F2 /* CBStoreHouseTransition.m */; };
+		6783C1931A49E8CB008AE2F2 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1921A49E8CB008AE2F2 /* NavigationControllerDelegate.m */; };
 		67CB91521A40CE700041DB26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB91511A40CE700041DB26 /* main.m */; };
 		67CB91551A40CE710041DB26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB91541A40CE710041DB26 /* AppDelegate.m */; };
 		67CB91581A40CE710041DB26 /* MyKitchenBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67CB91561A40CE710041DB26 /* MyKitchenBook.xcdatamodeld */; };
-		67CB915B1A40CE710041DB26 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB915A1A40CE710041DB26 /* MainMenuViewController.m */; };
 		67CB915E1A40CE710041DB26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CB915C1A40CE710041DB26 /* Main.storyboard */; };
 		67CB91601A40CE710041DB26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CB915F1A40CE710041DB26 /* Images.xcassets */; };
 		67CB916F1A40CE710041DB26 /* MyKitchenBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB916E1A40CE710041DB26 /* MyKitchenBookTests.m */; };
@@ -29,14 +34,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = ViewControllers/MainMenuViewController.m; sourceTree = "<group>"; };
+		6783C1791A49B74E008AE2F2 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = ViewControllers/MainMenuViewController.h; sourceTree = "<group>"; };
+		6783C17B1A49B916008AE2F2 /* RecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipesViewController.h; path = ViewControllers/RecipesViewController.h; sourceTree = "<group>"; };
+		6783C17C1A49B916008AE2F2 /* RecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipesViewController.m; path = ViewControllers/RecipesViewController.m; sourceTree = "<group>"; };
+		6783C17E1A49B929008AE2F2 /* ShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingListViewController.h; path = ViewControllers/ShoppingListViewController.h; sourceTree = "<group>"; };
+		6783C17F1A49B929008AE2F2 /* ShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingListViewController.m; path = ViewControllers/ShoppingListViewController.m; sourceTree = "<group>"; };
+		6783C1811A49B939008AE2F2 /* IngredientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IngredientsViewController.h; path = ViewControllers/IngredientsViewController.h; sourceTree = "<group>"; };
+		6783C1821A49B939008AE2F2 /* IngredientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IngredientsViewController.m; path = ViewControllers/IngredientsViewController.m; sourceTree = "<group>"; };
+		6783C18B1A49C654008AE2F2 /* CBStoreHouseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBStoreHouseTransition.h; path = CustomTransition/CBStoreHouseTransition.h; sourceTree = "<group>"; };
+		6783C18C1A49C654008AE2F2 /* CBStoreHouseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBStoreHouseTransition.m; path = CustomTransition/CBStoreHouseTransition.m; sourceTree = "<group>"; };
+		6783C1911A49E8CB008AE2F2 /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationControllerDelegate.h; path = ViewControllers/NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		6783C1921A49E8CB008AE2F2 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationControllerDelegate.m; path = ViewControllers/NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		67CB914C1A40CE700041DB26 /* KitchenBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CB91501A40CE700041DB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67CB91511A40CE700041DB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67CB91531A40CE700041DB26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67CB91541A40CE710041DB26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67CB91571A40CE710041DB26 /* MyKitchenBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyKitchenBook.xcdatamodel; sourceTree = "<group>"; };
-		67CB91591A40CE710041DB26 /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		67CB915A1A40CE710041DB26 /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		67CB915D1A40CE710041DB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67CB915F1A40CE710041DB26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		67CB91681A40CE710041DB26 /* KitchenBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitchenBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +78,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6783C1771A49B718008AE2F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6783C1791A49B74E008AE2F2 /* MainMenuViewController.h */,
+				6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */,
+				6783C17B1A49B916008AE2F2 /* RecipesViewController.h */,
+				6783C17C1A49B916008AE2F2 /* RecipesViewController.m */,
+				6783C17E1A49B929008AE2F2 /* ShoppingListViewController.h */,
+				6783C17F1A49B929008AE2F2 /* ShoppingListViewController.m */,
+				6783C1811A49B939008AE2F2 /* IngredientsViewController.h */,
+				6783C1821A49B939008AE2F2 /* IngredientsViewController.m */,
+				6783C1911A49E8CB008AE2F2 /* NavigationControllerDelegate.h */,
+				6783C1921A49E8CB008AE2F2 /* NavigationControllerDelegate.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6783C1871A49C624008AE2F2 /* CustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				6783C18B1A49C654008AE2F2 /* CBStoreHouseTransition.h */,
+				6783C18C1A49C654008AE2F2 /* CBStoreHouseTransition.m */,
+			);
+			name = CustomTransitions;
+			sourceTree = "<group>";
+		};
 		67CB91431A40CE700041DB26 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +125,10 @@
 		67CB914E1A40CE700041DB26 /* MyKitchenBook */ = {
 			isa = PBXGroup;
 			children = (
+				6783C1871A49C624008AE2F2 /* CustomTransitions */,
 				67CB91531A40CE700041DB26 /* AppDelegate.h */,
 				67CB91541A40CE710041DB26 /* AppDelegate.m */,
-				67CB91591A40CE710041DB26 /* MainMenuViewController.h */,
-				67CB915A1A40CE710041DB26 /* MainMenuViewController.m */,
+				6783C1771A49B718008AE2F2 /* ViewControllers */,
 				67CB915C1A40CE710041DB26 /* Main.storyboard */,
 				67CB915F1A40CE710041DB26 /* Images.xcassets */,
 				67CB91561A40CE710041DB26 /* MyKitchenBook.xcdatamodeld */,
@@ -233,10 +274,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6783C1801A49B929008AE2F2 /* ShoppingListViewController.m in Sources */,
+				6783C1831A49B939008AE2F2 /* IngredientsViewController.m in Sources */,
+				6783C17A1A49B74E008AE2F2 /* MainMenuViewController.m in Sources */,
 				67CB91551A40CE710041DB26 /* AppDelegate.m in Sources */,
+				6783C18D1A49C654008AE2F2 /* CBStoreHouseTransition.m in Sources */,
 				67CB91581A40CE710041DB26 /* MyKitchenBook.xcdatamodeld in Sources */,
-				67CB915B1A40CE710041DB26 /* MainMenuViewController.m in Sources */,
+				6783C17D1A49B916008AE2F2 /* RecipesViewController.m in Sources */,
 				67CB91521A40CE700041DB26 /* main.m in Sources */,
+				6783C1931A49E8CB008AE2F2 /* NavigationControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
