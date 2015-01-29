@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672B8EB41A7AB91E00C8EFBD /* PanoramaIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B8EB21A7AB91E00C8EFBD /* PanoramaIndicator.swift */; };
+		672B8EB51A7AB91E00C8EFBD /* PanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B8EB31A7AB91E00C8EFBD /* PanoramaView.swift */; };
+		672B8EB81A7AC04400C8EFBD /* RecipesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672B8EB71A7AC04400C8EFBD /* RecipesCollectionViewController.m */; };
+		672B8EBB1A7AC14100C8EFBD /* RAReorderableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B8EBA1A7AC14100C8EFBD /* RAReorderableLayout.swift */; };
 		6783C17A1A49B74E008AE2F2 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */; };
 		6783C17D1A49B916008AE2F2 /* RecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C17C1A49B916008AE2F2 /* RecipesViewController.m */; };
 		6783C1801A49B929008AE2F2 /* ShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C17F1A49B929008AE2F2 /* ShoppingListViewController.m */; };
 		6783C1831A49B939008AE2F2 /* IngredientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1821A49B939008AE2F2 /* IngredientsViewController.m */; };
 		6783C18D1A49C654008AE2F2 /* CBStoreHouseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C18C1A49C654008AE2F2 /* CBStoreHouseTransition.m */; };
 		6783C1931A49E8CB008AE2F2 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1921A49E8CB008AE2F2 /* NavigationControllerDelegate.m */; };
+		6783C1971A4A02F7008AE2F2 /* RecipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1961A4A02F7008AE2F2 /* RecipeTableViewCell.m */; };
+		6783C1A21A4AC608008AE2F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6783C1A41A4AC608008AE2F2 /* Localizable.strings */; };
+		6783C1BD1A4AC7B9008AE2F2 /* NSObject+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1AC1A4AC7B9008AE2F2 /* NSObject+AGi18n.m */; };
+		6783C1BE1A4AC7B9008AE2F2 /* UIBarButtonItem+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1AE1A4AC7B9008AE2F2 /* UIBarButtonItem+AGi18n.m */; };
+		6783C1BF1A4AC7B9008AE2F2 /* UIButton+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1B01A4AC7B9008AE2F2 /* UIButton+AGi18n.m */; };
+		6783C1C01A4AC7B9008AE2F2 /* UILabel+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1B21A4AC7B9008AE2F2 /* UILabel+AGi18n.m */; };
+		6783C1C11A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1B41A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.m */; };
+		6783C1C21A4AC7B9008AE2F2 /* UISearchBar+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1B61A4AC7B9008AE2F2 /* UISearchBar+AGi18n.m */; };
+		6783C1C31A4AC7B9008AE2F2 /* UISegmentedControl+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1B81A4AC7B9008AE2F2 /* UISegmentedControl+AGi18n.m */; };
+		6783C1C41A4AC7B9008AE2F2 /* UITextField+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1BA1A4AC7B9008AE2F2 /* UITextField+AGi18n.m */; };
+		6783C1C51A4AC7B9008AE2F2 /* UITextView+AGi18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1BC1A4AC7B9008AE2F2 /* UITextView+AGi18n.m */; };
 		67CB91521A40CE700041DB26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB91511A40CE700041DB26 /* main.m */; };
 		67CB91551A40CE710041DB26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB91541A40CE710041DB26 /* AppDelegate.m */; };
 		67CB91581A40CE710041DB26 /* MyKitchenBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67CB91561A40CE710041DB26 /* MyKitchenBook.xcdatamodeld */; };
@@ -21,6 +36,7 @@
 		67CB916F1A40CE710041DB26 /* MyKitchenBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CB916E1A40CE710041DB26 /* MyKitchenBookTests.m */; };
 		67E44E681A48C8AE004C4AFE /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67E44E671A48C8AE004C4AFE /* Pacifico.ttf */; };
 		67E44E691A48C8AE004C4AFE /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67E44E671A48C8AE004C4AFE /* Pacifico.ttf */; };
+		CAB97E320E485CC6C3580F6C /* libPods-KitchenBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CACE1501F6BA483CF79641A /* libPods-KitchenBook.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07A164A02526B8701EEF857B /* Pods-KitchenBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitchenBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KitchenBook/Pods-KitchenBook.debug.xcconfig"; sourceTree = "<group>"; };
+		3CACE1501F6BA483CF79641A /* libPods-KitchenBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KitchenBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		672B8EB11A7AB91D00C8EFBD /* KitchenBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KitchenBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		672B8EB21A7AB91E00C8EFBD /* PanoramaIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaIndicator.swift; sourceTree = "<group>"; };
+		672B8EB31A7AB91E00C8EFBD /* PanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaView.swift; sourceTree = "<group>"; };
+		672B8EB61A7AC04400C8EFBD /* RecipesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipesCollectionViewController.h; path = ViewControllers/RecipesCollectionViewController.h; sourceTree = "<group>"; };
+		672B8EB71A7AC04400C8EFBD /* RecipesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipesCollectionViewController.m; path = ViewControllers/RecipesCollectionViewController.m; sourceTree = "<group>"; };
+		672B8EBA1A7AC14100C8EFBD /* RAReorderableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAReorderableLayout.swift; sourceTree = "<group>"; };
 		6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = ViewControllers/MainMenuViewController.m; sourceTree = "<group>"; };
 		6783C1791A49B74E008AE2F2 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = ViewControllers/MainMenuViewController.h; sourceTree = "<group>"; };
 		6783C17B1A49B916008AE2F2 /* RecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipesViewController.h; path = ViewControllers/RecipesViewController.h; sourceTree = "<group>"; };
@@ -46,18 +70,44 @@
 		6783C18C1A49C654008AE2F2 /* CBStoreHouseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBStoreHouseTransition.m; path = CustomTransition/CBStoreHouseTransition.m; sourceTree = "<group>"; };
 		6783C1911A49E8CB008AE2F2 /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationControllerDelegate.h; path = ViewControllers/NavigationControllerDelegate.h; sourceTree = "<group>"; };
 		6783C1921A49E8CB008AE2F2 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationControllerDelegate.m; path = ViewControllers/NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		6783C1951A4A02F7008AE2F2 /* RecipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipeTableViewCell.h; path = Cells/RecipeTableViewCell.h; sourceTree = "<group>"; };
+		6783C1961A4A02F7008AE2F2 /* RecipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipeTableViewCell.m; path = Cells/RecipeTableViewCell.m; sourceTree = "<group>"; };
+		6783C1A31A4AC608008AE2F2 /* en */ = {isa = PBXFileReference; fileEncoding = 2483028224; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6783C1A51A4AC60B008AE2F2 /* hu */ = {isa = PBXFileReference; fileEncoding = 2483028224; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6783C1A61A4AC636008AE2F2 /* hu */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = hu; path = hu.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6783C1A81A4AC6CE008AE2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6783C1A91A4AC6D3008AE2F2 /* Base */ = {isa = PBXFileReference; fileEncoding = 2483028224; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6783C1AB1A4AC7B9008AE2F2 /* NSObject+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1AC1A4AC7B9008AE2F2 /* NSObject+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1AD1A4AC7B9008AE2F2 /* UIBarButtonItem+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1AE1A4AC7B9008AE2F2 /* UIBarButtonItem+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1AF1A4AC7B9008AE2F2 /* UIButton+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1B01A4AC7B9008AE2F2 /* UIButton+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1B11A4AC7B9008AE2F2 /* UILabel+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1B21A4AC7B9008AE2F2 /* UILabel+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1B31A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1B41A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1B51A4AC7B9008AE2F2 /* UISearchBar+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1B61A4AC7B9008AE2F2 /* UISearchBar+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1B71A4AC7B9008AE2F2 /* UISegmentedControl+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1B81A4AC7B9008AE2F2 /* UISegmentedControl+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1B91A4AC7B9008AE2F2 /* UITextField+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1BA1A4AC7B9008AE2F2 /* UITextField+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1BB1A4AC7B9008AE2F2 /* UITextView+AGi18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+AGi18n.h"; sourceTree = "<group>"; };
+		6783C1BC1A4AC7B9008AE2F2 /* UITextView+AGi18n.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+AGi18n.m"; sourceTree = "<group>"; };
+		6783C1CA1A4ACECE008AE2F2 /* KitchenBookPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KitchenBookPrefixHeader.pch; path = ../KitchenBookPrefixHeader.pch; sourceTree = "<group>"; };
 		67CB914C1A40CE700041DB26 /* KitchenBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CB91501A40CE700041DB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67CB91511A40CE700041DB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67CB91531A40CE700041DB26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67CB91541A40CE710041DB26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67CB91571A40CE710041DB26 /* MyKitchenBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyKitchenBook.xcdatamodel; sourceTree = "<group>"; };
-		67CB915D1A40CE710041DB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67CB915F1A40CE710041DB26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		67CB91681A40CE710041DB26 /* KitchenBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitchenBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CB916D1A40CE710041DB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67CB916E1A40CE710041DB26 /* MyKitchenBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyKitchenBookTests.m; sourceTree = "<group>"; };
 		67E44E671A48C8AE004C4AFE /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		D181BA2D829E36895FB51DE9 /* Pods-KitchenBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitchenBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-KitchenBook/Pods-KitchenBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB97E320E485CC6C3580F6C /* libPods-KitchenBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +129,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		672B8EB01A7AB90A00C8EFBD /* Panoramic */ = {
+			isa = PBXGroup;
+			children = (
+				672B8EB21A7AB91E00C8EFBD /* PanoramaIndicator.swift */,
+				672B8EB31A7AB91E00C8EFBD /* PanoramaView.swift */,
+				672B8EB11A7AB91D00C8EFBD /* KitchenBook-Bridging-Header.h */,
+			);
+			name = Panoramic;
+			sourceTree = "<group>";
+		};
+		672B8EB91A7AC14100C8EFBD /* RAReorderableLayout */ = {
+			isa = PBXGroup;
+			children = (
+				672B8EBA1A7AC14100C8EFBD /* RAReorderableLayout.swift */,
+			);
+			path = RAReorderableLayout;
+			sourceTree = "<group>";
+		};
 		6783C1771A49B718008AE2F2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +160,8 @@
 				6783C1821A49B939008AE2F2 /* IngredientsViewController.m */,
 				6783C1911A49E8CB008AE2F2 /* NavigationControllerDelegate.h */,
 				6783C1921A49E8CB008AE2F2 /* NavigationControllerDelegate.m */,
+				672B8EB61A7AC04400C8EFBD /* RecipesCollectionViewController.h */,
+				672B8EB71A7AC04400C8EFBD /* RecipesCollectionViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -104,12 +175,48 @@
 			name = CustomTransitions;
 			sourceTree = "<group>";
 		};
+		6783C1941A4A02DC008AE2F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6783C1951A4A02F7008AE2F2 /* RecipeTableViewCell.h */,
+				6783C1961A4A02F7008AE2F2 /* RecipeTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		6783C1AA1A4AC7B9008AE2F2 /* AGi18n */ = {
+			isa = PBXGroup;
+			children = (
+				6783C1AB1A4AC7B9008AE2F2 /* NSObject+AGi18n.h */,
+				6783C1AC1A4AC7B9008AE2F2 /* NSObject+AGi18n.m */,
+				6783C1AD1A4AC7B9008AE2F2 /* UIBarButtonItem+AGi18n.h */,
+				6783C1AE1A4AC7B9008AE2F2 /* UIBarButtonItem+AGi18n.m */,
+				6783C1AF1A4AC7B9008AE2F2 /* UIButton+AGi18n.h */,
+				6783C1B01A4AC7B9008AE2F2 /* UIButton+AGi18n.m */,
+				6783C1B11A4AC7B9008AE2F2 /* UILabel+AGi18n.h */,
+				6783C1B21A4AC7B9008AE2F2 /* UILabel+AGi18n.m */,
+				6783C1B31A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.h */,
+				6783C1B41A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.m */,
+				6783C1B51A4AC7B9008AE2F2 /* UISearchBar+AGi18n.h */,
+				6783C1B61A4AC7B9008AE2F2 /* UISearchBar+AGi18n.m */,
+				6783C1B71A4AC7B9008AE2F2 /* UISegmentedControl+AGi18n.h */,
+				6783C1B81A4AC7B9008AE2F2 /* UISegmentedControl+AGi18n.m */,
+				6783C1B91A4AC7B9008AE2F2 /* UITextField+AGi18n.h */,
+				6783C1BA1A4AC7B9008AE2F2 /* UITextField+AGi18n.m */,
+				6783C1BB1A4AC7B9008AE2F2 /* UITextView+AGi18n.h */,
+				6783C1BC1A4AC7B9008AE2F2 /* UITextView+AGi18n.m */,
+			);
+			path = AGi18n;
+			sourceTree = "<group>";
+		};
 		67CB91431A40CE700041DB26 = {
 			isa = PBXGroup;
 			children = (
 				67CB914E1A40CE700041DB26 /* MyKitchenBook */,
 				67CB916B1A40CE710041DB26 /* MyKitchenBookTests */,
 				67CB914D1A40CE700041DB26 /* Products */,
+				A8311B41DDA7426F139132DA /* Pods */,
+				F857BEACA5AA76826A9D5AB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,9 +232,11 @@
 		67CB914E1A40CE700041DB26 /* MyKitchenBook */ = {
 			isa = PBXGroup;
 			children = (
+				6783C1CA1A4ACECE008AE2F2 /* KitchenBookPrefixHeader.pch */,
 				6783C1871A49C624008AE2F2 /* CustomTransitions */,
 				67CB91531A40CE700041DB26 /* AppDelegate.h */,
 				67CB91541A40CE710041DB26 /* AppDelegate.m */,
+				6783C1941A4A02DC008AE2F2 /* Cells */,
 				6783C1771A49B718008AE2F2 /* ViewControllers */,
 				67CB915C1A40CE710041DB26 /* Main.storyboard */,
 				67CB915F1A40CE710041DB26 /* Images.xcassets */,
@@ -140,9 +249,13 @@
 		67CB914F1A40CE700041DB26 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				672B8EB91A7AC14100C8EFBD /* RAReorderableLayout */,
+				672B8EB01A7AB90A00C8EFBD /* Panoramic */,
+				6783C1AA1A4AC7B9008AE2F2 /* AGi18n */,
 				67E44E661A48C89B004C4AFE /* Custom Fonts */,
 				67CB91501A40CE700041DB26 /* Info.plist */,
 				67CB91511A40CE700041DB26 /* main.m */,
+				6783C1A41A4AC608008AE2F2 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,6 +285,23 @@
 			name = "Custom Fonts";
 			sourceTree = "<group>";
 		};
+		A8311B41DDA7426F139132DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A164A02526B8701EEF857B /* Pods-KitchenBook.debug.xcconfig */,
+				D181BA2D829E36895FB51DE9 /* Pods-KitchenBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F857BEACA5AA76826A9D5AB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CACE1501F6BA483CF79641A /* libPods-KitchenBook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67CB91721A40CE710041DB26 /* Build configuration list for PBXNativeTarget "KitchenBook" */;
 			buildPhases = (
+				1EE4BC0FCA67B9F0F571514E /* Check Pods Manifest.lock */,
 				67CB91481A40CE700041DB26 /* Sources */,
 				67CB91491A40CE700041DB26 /* Frameworks */,
 				67CB914A1A40CE700041DB26 /* Resources */,
+				927A141535373FDBE2B7E606 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +367,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				hu,
 				Base,
 			);
 			mainGroup = 67CB91431A40CE700041DB26;
@@ -254,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CB915E1A40CE710041DB26 /* Main.storyboard in Resources */,
+				6783C1A21A4AC608008AE2F2 /* Localizable.strings in Resources */,
 				67CB91601A40CE710041DB26 /* Images.xcassets in Resources */,
 				67E44E681A48C8AE004C4AFE /* Pacifico.ttf in Resources */,
 			);
@@ -269,20 +403,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EE4BC0FCA67B9F0F571514E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		927A141535373FDBE2B7E606 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KitchenBook/Pods-KitchenBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67CB91481A40CE700041DB26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6783C1C31A4AC7B9008AE2F2 /* UISegmentedControl+AGi18n.m in Sources */,
 				6783C1801A49B929008AE2F2 /* ShoppingListViewController.m in Sources */,
 				6783C1831A49B939008AE2F2 /* IngredientsViewController.m in Sources */,
 				6783C17A1A49B74E008AE2F2 /* MainMenuViewController.m in Sources */,
 				67CB91551A40CE710041DB26 /* AppDelegate.m in Sources */,
+				672B8EBB1A7AC14100C8EFBD /* RAReorderableLayout.swift in Sources */,
+				6783C1BD1A4AC7B9008AE2F2 /* NSObject+AGi18n.m in Sources */,
+				672B8EB81A7AC04400C8EFBD /* RecipesCollectionViewController.m in Sources */,
+				672B8EB51A7AB91E00C8EFBD /* PanoramaView.swift in Sources */,
 				6783C18D1A49C654008AE2F2 /* CBStoreHouseTransition.m in Sources */,
+				6783C1C51A4AC7B9008AE2F2 /* UITextView+AGi18n.m in Sources */,
+				6783C1971A4A02F7008AE2F2 /* RecipeTableViewCell.m in Sources */,
 				67CB91581A40CE710041DB26 /* MyKitchenBook.xcdatamodeld in Sources */,
+				6783C1BE1A4AC7B9008AE2F2 /* UIBarButtonItem+AGi18n.m in Sources */,
+				6783C1BF1A4AC7B9008AE2F2 /* UIButton+AGi18n.m in Sources */,
+				6783C1C11A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.m in Sources */,
+				6783C1C21A4AC7B9008AE2F2 /* UISearchBar+AGi18n.m in Sources */,
 				6783C17D1A49B916008AE2F2 /* RecipesViewController.m in Sources */,
 				67CB91521A40CE700041DB26 /* main.m in Sources */,
+				6783C1C01A4AC7B9008AE2F2 /* UILabel+AGi18n.m in Sources */,
 				6783C1931A49E8CB008AE2F2 /* NavigationControllerDelegate.m in Sources */,
+				672B8EB41A7AB91E00C8EFBD /* PanoramaIndicator.swift in Sources */,
+				6783C1C41A4AC7B9008AE2F2 /* UITextField+AGi18n.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,10 +486,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6783C1A41A4AC608008AE2F2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6783C1A31A4AC608008AE2F2 /* en */,
+				6783C1A51A4AC60B008AE2F2 /* hu */,
+				6783C1A91A4AC6D3008AE2F2 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		67CB915C1A40CE710041DB26 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				67CB915D1A40CE710041DB26 /* Base */,
+				6783C1A61A4AC636008AE2F2 /* hu */,
+				6783C1A81A4AC6CE008AE2F2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +531,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = /Users/tibikolozsi/Projects/MyKitchenBook_new2014/Git/Project/MyKitchenBook/KitchenBookPrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -379,6 +572,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = /Users/tibikolozsi/Projects/MyKitchenBook_new2014/Git/Project/MyKitchenBook/KitchenBookPrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -394,25 +588,32 @@
 		};
 		67CB91731A40CE710041DB26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A164A02526B8701EEF857B /* Pods-KitchenBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyKitchenBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KitchenBook;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyKitchenBook/KitchenBook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		67CB91741A40CE710041DB26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D181BA2D829E36895FB51DE9 /* Pods-KitchenBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyKitchenBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = KitchenBook;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyKitchenBook/KitchenBook-Bridging-Header.h";
 			};
 			name = Release;
 		};

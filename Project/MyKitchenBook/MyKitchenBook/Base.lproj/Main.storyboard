@@ -52,7 +52,7 @@
                                     <color key="titleColor" red="0.85490196078431369" green="0.58431372549019611" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0fB-VG-uFR" kind="show" identifier="PushRecipeSegue" id="B61-6U-dOc"/>
+                                    <segue destination="gMm-zA-A3y" kind="show" id="MAc-9z-exN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0I-g7-MX3">
@@ -157,19 +157,111 @@
             <point key="canvasLocation" x="1319.5" y="521.5"/>
         </scene>
         <!--Recipes-->
+        <scene sceneID="obO-91-rtw">
+            <objects>
+                <collectionViewController title="Recipes" id="gMm-zA-A3y" customClass="RecipesCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="j21-3s-lYy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.44016335227272729" green="0.44016335227272729" blue="0.44016335227272729" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="toj-xT-EeK" customClass="RAReorderableLayout" customModule="KitchenBook" customModuleProvider="target">
+                            <size key="itemSize" width="374" height="139"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeCell" id="E6H-tJ-1ey" customClass="RACollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="139"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mVy-xs-i1F">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="139"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2i5-xO-qdM">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="139"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="2i5-xO-qdM" firstAttribute="leading" secondItem="E6H-tJ-1ey" secondAttribute="leading" id="1LG-nY-STO"/>
+                                    <constraint firstAttribute="bottom" secondItem="mVy-xs-i1F" secondAttribute="bottom" id="Hsl-Dv-Grc"/>
+                                    <constraint firstAttribute="trailing" secondItem="mVy-xs-i1F" secondAttribute="trailing" id="MSk-Va-GeE"/>
+                                    <constraint firstItem="mVy-xs-i1F" firstAttribute="leading" secondItem="E6H-tJ-1ey" secondAttribute="leading" id="TB5-9y-f2u"/>
+                                    <constraint firstAttribute="bottom" secondItem="2i5-xO-qdM" secondAttribute="bottom" id="VCk-kG-ZZx"/>
+                                    <constraint firstItem="mVy-xs-i1F" firstAttribute="top" secondItem="E6H-tJ-1ey" secondAttribute="top" id="W9P-fr-Z3d"/>
+                                    <constraint firstItem="2i5-xO-qdM" firstAttribute="top" secondItem="E6H-tJ-1ey" secondAttribute="top" id="iFT-11-AIv"/>
+                                    <constraint firstAttribute="trailing" secondItem="2i5-xO-qdM" secondAttribute="trailing" id="u8S-ml-Ee4"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="highlightedCover" destination="2i5-xO-qdM" id="wia-XN-34H"/>
+                                    <outlet property="imageView" destination="mVy-xs-i1F" id="Ual-VL-qCU"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="gMm-zA-A3y" id="j8Z-NK-KSI"/>
+                            <outlet property="delegate" destination="gMm-zA-A3y" id="1pd-5r-oEh"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Recipes" id="pOI-QD-spu">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="gnq-hq-RY4">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="menuButtonTouched:" destination="gMm-zA-A3y" id="iye-wv-tzQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTh-pz-z3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466.5" y="-284.5"/>
+        </scene>
+        <!--Recipes-->
         <scene sceneID="YXQ-aG-3gv">
             <objects>
                 <tableViewController id="0fB-VG-uFR" customClass="RecipesViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EUG-gT-Rjq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="EUG-gT-Rjq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" barStyle="black" searchBarStyle="prominent" translucent="NO" id="Att-H0-oRt">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="0fB-VG-uFR" id="Gnn-jx-tKx"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZoS-GC-Smi">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="200" id="ZoS-GC-Smi" customClass="RecipeTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZoS-GC-Smi" id="F3W-ux-68E">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTa-90-rHH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="eTa-90-rHH" secondAttribute="trailing" id="4Vb-nR-rw0"/>
+                                        <constraint firstItem="eTa-90-rHH" firstAttribute="leading" secondItem="F3W-ux-68E" secondAttribute="leading" id="XEO-cn-8ZX"/>
+                                        <constraint firstItem="eTa-90-rHH" firstAttribute="top" secondItem="F3W-ux-68E" secondAttribute="top" id="bOh-N7-nmc"/>
+                                        <constraint firstAttribute="bottom" secondItem="eTa-90-rHH" secondAttribute="bottom" id="sYc-kc-NiF"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="backgroundImage" destination="eTa-90-rHH" id="8h2-iO-Wjj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -177,11 +269,31 @@
                             <outlet property="delegate" destination="0fB-VG-uFR" id="wIj-nZ-z0Q"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Recipes" id="b3L-hr-tVq"/>
+                    <navigationItem key="navigationItem" title="Recipes" id="b3L-hr-tVq">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="NQD-bg-NwP">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="menuButtonTouched:" destination="0fB-VG-uFR" id="rnG-5v-If4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Att-H0-oRt" id="TKF-z9-1q5"/>
+                        <outlet property="searchDisplayController" destination="9a1-4K-lNm" id="byx-zZ-Vv1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwz-Sp-HDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="9a1-4K-lNm">
+                    <connections>
+                        <outlet property="delegate" destination="0fB-VG-uFR" id="ldk-RH-EE1"/>
+                        <outlet property="searchBar" destination="Att-H0-oRt" id="tGF-9P-kpx"/>
+                        <outlet property="searchContentsController" destination="0fB-VG-uFR" id="BvP-gY-G3S"/>
+                        <outlet property="searchResultsDataSource" destination="0fB-VG-uFR" id="aJJ-om-tDC"/>
+                        <outlet property="searchResultsDelegate" destination="0fB-VG-uFR" id="Z03-oT-UTR"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1989.5" y="41.5"/>
         </scene>

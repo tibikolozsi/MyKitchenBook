@@ -8,8 +8,14 @@
 
 #import "RecipesViewController.h"
 #import "NavigationControllerDelegate.h"
+#import "RecipeTableViewCell.h"
+#import <CNPGridMenu.h>
 
-@interface RecipesViewController ()
+@interface RecipesViewController () <CNPGridMenuDelegate>
+
+@property (nonatomic, strong) CNPGridMenu *gridMenu;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
@@ -22,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self hidesSearchBar];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -40,29 +47,34 @@
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
 }
 
+- (void)hidesSearchBar
+{
+    CGSize searchSize = self.searchDisplayController.searchBar.bounds.size;
+    [self.tableView setContentOffset:CGPointMake(0, searchSize.height)];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 5;
 }
 
-/*
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
- UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    RecipeTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
+    
+    NSString* string = [NSString stringWithFormat:@"%ld",indexPath.row];
+    cell.backgroundImage.image = [UIImage imageNamed:string];
+    
+    // Configure the cell...
  
- // Configure the cell...
- 
- return cell;
- }
- */
+    return cell;
+}
 
 /*
  // Override to support conditional editing of the table view.
@@ -98,14 +110,10 @@
  }
  */
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//
+//}
+
+
 
 @end

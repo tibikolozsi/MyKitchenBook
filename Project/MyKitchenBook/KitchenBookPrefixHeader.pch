@@ -1,0 +1,16 @@
+//
+//  KitchenBookPrefixHeader.pch
+//  KitchenBook
+//
+//  Created by Tibi Kolozsi on 24/12/14.
+//  Copyright (c) 2014 tibikolozsi. All rights reserved.
+//
+
+#ifndef KitchenBook_KitchenBookPrefixHeader_pch
+#define KitchenBook_KitchenBookPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#endif
