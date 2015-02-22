@@ -10,6 +10,7 @@
 #import "NavigationControllerDelegate.h"
 #import "KitchenBook-Swift.h"
 #import <CNPGridMenu.h>
+#import <TLYShyNavBarManager.h>
 
 
 @interface RACollectionViewCell : UICollectionViewCell
@@ -97,6 +98,7 @@
 @property (nonatomic,strong) NSMutableArray* images;
 
 @property (nonatomic,strong) UISearchBar* searchBar;
+@property (nonatomic) BOOL isSearchBarVisible;
 
 @end
 
@@ -112,44 +114,27 @@ static NSString * const kReuseIdentifier = @"RecipeCell";
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
 }
 
-- (void)hidesSearchBar
-{
-//    CGSize searchSize = self.searchDisplayController.searchBar.bounds.size;
-//    [self.tableView setContentOffset:CGPointMake(0, searchSize.height)];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
-    [self hidesSearchBar];
-    
-    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, -44, [UIScreen mainScreen].bounds.size.width, 44)];
-    [self.view addSubview:self.searchBar];
-    
-    
     // Do any additional setup after loading the view.
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+    
+    self.shyNavBarManager.scrollView = self.collectionView;
+
+    
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, -44, [UIScreen mainScreen].bounds.size.width, 44)];
+    [self.view addSubview:self.searchBar];
+
+
     self.images = [[NSMutableArray alloc] init];
     for (int i=0; i<29; i++) {
         NSString* name = [NSString stringWithFormat:@"Sample%d.jpg",i];
         UIImage* image = [UIImage imageNamed:name];
         [self.images addObject:image];
     }
-}
-
-- (void)changeSearchBar:(BOOL)shouldShow
-{
-    CGPoint positionToSet;
-    CGFloat desiredYPosition = self.navigationController.navigationBar.frame.size.height + 20;
-    if (shouldShow) {
-        positionToSet = CGPointMake(0, desiredYPosition);
-    } else {
-        positionToSet = CGPointMake(0, desiredYPosition - self.searchBar.frame.size.height);
-
-    }
-    self.searchBar.frame = CGRectMake(positionToSet.x, positionToSet.y, self.searchBar.frame.size.width, self.searchBar.frame.size.height);;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -168,7 +153,7 @@ static NSString * const kReuseIdentifier = @"RecipeCell";
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    self.collectionView.contentInset = UIEdgeInsetsMake(self.topLayoutGuide.length, 0, 0, 0);
+//    self.collectionView.contentInset = UIEdgeInsetsMake(self.topLayoutGuide.length, 0, 0, 0);
     
 }
 
@@ -305,34 +290,36 @@ static NSString * const kReuseIdentifier = @"RecipeCell";
     }];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    NSInteger yOffset = scrollView.contentOffset.y;
-//    NSLog(@"y offset: %ld",yOffset);
-//        UIView* tb = self.searchBar;
-//    if (yOffset > 0) {
-//
-//        tb.frame = CGRectMake(tb.frame.origin.x, 0 + yOffset, tb.frame.size.width, tb.frame.size.height);
-//    }
-//    if (yOffset < 1) tb.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.searchBar.frame.size.height);
-    
-//    NSLog(@" frame: %@",NSStringFromCGRect(self.searchBar.frame));
-}
-
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
-{
-    // TODO : fix
-    if (velocity.y < 0 && velocity.y > -1.5) {
-        [self changeSearchBar:YES];
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    NSLog(@"scrollViewWillBeginDecelerating:%f",self.collectionView.contentOffset.y);
+    if ((self.collectionView.contentOffset.y <= -64 && !self.isSearchBarVisible) || self.collectionView.contentOffset.y == -108) {
+        [self showSearchBar:YES];
     } else {
-        [self changeSearchBar:NO];
+        [self showSearchBar:NO];
     }
-    NSLog(@"frame: %@",NSStringFromCGRect(self.searchBar.frame));
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-//    NSLog(@"didEndDragging:willDecelerate:%@",decelerate ? @"YES" : @"NO");
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self.searchBar resignFirstResponder];
+}
+
+- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView {
+    [self showSearchBar:YES];
+}
+
+- (void)showSearchBar:(BOOL)shouldShow {
+    self.isSearchBarVisible = shouldShow;
+    CGRect searchBarFrame;
+    if (shouldShow) {
+        [self.collectionView setContentOffset:CGPointMake(0, -108) animated:YES];
+        searchBarFrame = CGRectMake(0, 64, self.searchBar.frame.size.width, self.searchBar.frame.size.height);
+    } else {
+        searchBarFrame = CGRectMake(0, -44, self.searchBar.frame.size.width, self.searchBar.frame.size.height);
+    }
+    [UIView animateWithDuration:0.2 animations:^{
+            [self.searchBar setFrame:searchBarFrame];
+    }];
+
 }
 
 @end

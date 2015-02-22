@@ -12,7 +12,6 @@
 		672B8EB81A7AC04400C8EFBD /* RecipesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672B8EB71A7AC04400C8EFBD /* RecipesCollectionViewController.m */; };
 		672B8EBB1A7AC14100C8EFBD /* RAReorderableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B8EBA1A7AC14100C8EFBD /* RAReorderableLayout.swift */; };
 		6783C17A1A49B74E008AE2F2 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */; };
-		6783C17D1A49B916008AE2F2 /* RecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C17C1A49B916008AE2F2 /* RecipesViewController.m */; };
 		6783C1801A49B929008AE2F2 /* ShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C17F1A49B929008AE2F2 /* ShoppingListViewController.m */; };
 		6783C1831A49B939008AE2F2 /* IngredientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C1821A49B939008AE2F2 /* IngredientsViewController.m */; };
 		6783C18D1A49C654008AE2F2 /* CBStoreHouseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6783C18C1A49C654008AE2F2 /* CBStoreHouseTransition.m */; };
@@ -60,8 +59,6 @@
 		672B8EBA1A7AC14100C8EFBD /* RAReorderableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAReorderableLayout.swift; sourceTree = "<group>"; };
 		6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = ViewControllers/MainMenuViewController.m; sourceTree = "<group>"; };
 		6783C1791A49B74E008AE2F2 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = ViewControllers/MainMenuViewController.h; sourceTree = "<group>"; };
-		6783C17B1A49B916008AE2F2 /* RecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipesViewController.h; path = ViewControllers/RecipesViewController.h; sourceTree = "<group>"; };
-		6783C17C1A49B916008AE2F2 /* RecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipesViewController.m; path = ViewControllers/RecipesViewController.m; sourceTree = "<group>"; };
 		6783C17E1A49B929008AE2F2 /* ShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingListViewController.h; path = ViewControllers/ShoppingListViewController.h; sourceTree = "<group>"; };
 		6783C17F1A49B929008AE2F2 /* ShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingListViewController.m; path = ViewControllers/ShoppingListViewController.m; sourceTree = "<group>"; };
 		6783C1811A49B939008AE2F2 /* IngredientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IngredientsViewController.h; path = ViewControllers/IngredientsViewController.h; sourceTree = "<group>"; };
@@ -152,8 +149,6 @@
 			children = (
 				6783C1791A49B74E008AE2F2 /* MainMenuViewController.h */,
 				6783C1781A49B74E008AE2F2 /* MainMenuViewController.m */,
-				6783C17B1A49B916008AE2F2 /* RecipesViewController.h */,
-				6783C17C1A49B916008AE2F2 /* RecipesViewController.m */,
 				6783C17E1A49B929008AE2F2 /* ShoppingListViewController.h */,
 				6783C17F1A49B929008AE2F2 /* ShoppingListViewController.m */,
 				6783C1811A49B939008AE2F2 /* IngredientsViewController.h */,
@@ -458,7 +453,6 @@
 				6783C1BF1A4AC7B9008AE2F2 /* UIButton+AGi18n.m in Sources */,
 				6783C1C11A4AC7B9008AE2F2 /* UINavigationItem+AGi18n.m in Sources */,
 				6783C1C21A4AC7B9008AE2F2 /* UISearchBar+AGi18n.m in Sources */,
-				6783C17D1A49B916008AE2F2 /* RecipesViewController.m in Sources */,
 				67CB91521A40CE700041DB26 /* main.m in Sources */,
 				6783C1C01A4AC7B9008AE2F2 /* UILabel+AGi18n.m in Sources */,
 				6783C1931A49E8CB008AE2F2 /* NavigationControllerDelegate.m in Sources */,
