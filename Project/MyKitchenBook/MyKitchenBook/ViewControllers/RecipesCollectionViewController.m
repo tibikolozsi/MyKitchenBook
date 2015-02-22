@@ -263,13 +263,13 @@ static NSString * const kReuseIdentifier = @"RecipeCell";
     favourites.icon = [UIImage imageNamed:@"RecipeViewIconFavourites"];
     favourites.title = NSLocalizedString(@"Favourites", @"Favourites menu item");
     
-    CNPGridMenu *gridMenu = [[CNPGridMenu alloc] initWithMenuItems:@[newRecipe,
+    CNPGridMenu *gridMenu = [[CNPGridMenu alloc] initWithMenuItems:@[@[newRecipe],@[
                                                                      allRecipes,
                                                                      desserts,
                                                                      starters,
                                                                      mainCourses,
                                                                      soups,
-                                                                     favourites]];
+                                                                     favourites]]];
     gridMenu.delegate = self;
     [self presentGridMenu:gridMenu animated:YES completion:^{
         NSLog(@"Grid Menu Presented");
